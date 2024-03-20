@@ -14,10 +14,11 @@ return new class extends Migration
         Schema::create('pants', function (Blueprint $table) {
             $table->id();
             $table->string('description');
-            $table->string('brand');
-            $table->string('shop');
+            $table->foreignId('brand_id')->constrained();
+            $table->foreignId('shop_id')->constrained();
             $table->double('price');
             $table->string('image');
+            $table->timestamps();
         });
     }
 

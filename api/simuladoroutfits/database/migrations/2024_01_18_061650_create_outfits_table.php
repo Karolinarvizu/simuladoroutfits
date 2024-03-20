@@ -13,6 +13,10 @@ return new class extends Migration
     {
         Schema::create('outfits', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('pant_id')->constrained('pants')->onDelete('cascade');
+            $table->foreignId('shirt_id')->constrained('shirts')->onDelete('cascade');
+            $table->foreignId('accessory_id')->nullable()->constrained('accessories')->onDelete('cascade');
+            $table->foreignId('shoe_id')->constrained('shoes')->onDelete('cascade');
             $table->timestamps();
         });
     }
