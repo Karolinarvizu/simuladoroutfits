@@ -23,7 +23,7 @@ class AuthController extends Controller
         $accessToken = auth()->user()->createToken('authToken')->accessToken;
 
         return response([
-            
+            'id' => auth()->user()->id,
             'profile' => auth()->user(),
             'access_token' => $accessToken,
             'message' => 'sucess'
