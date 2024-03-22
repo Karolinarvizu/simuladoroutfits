@@ -1,21 +1,14 @@
 <?php
 
 use App\Http\Controllers\Api\AccessorieController;
-use App\Http\Controllers\Api\AccessoriesController;
 use App\Http\Controllers\Api\AuthController;
 use App\Http\Controllers\Api\BrandController;
-use App\Http\Controllers\Api\BrandsController;
 use App\Http\Controllers\Api\CommentController;
-use App\Http\Controllers\Api\CommentsController;
 use App\Http\Controllers\Api\PantController;
-use App\Http\Controllers\Api\PantsController;
 use App\Http\Controllers\Api\ShirtController;
-use App\Http\Controllers\Api\ShirtsController;
 use App\Http\Controllers\Api\ShoeController;
 use App\Http\Controllers\Api\ShopController;
-use App\Http\Controllers\Api\ShopsController;
 use App\Http\Controllers\Api\UserController;
-use App\Models\Shoe;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
